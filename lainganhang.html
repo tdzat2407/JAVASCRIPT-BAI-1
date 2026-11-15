@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tính lãi suất</title>
+</head>
+<body>
+    <h2>Tính lãi suất ngân hàng</h2>
+
+    <script>
+        let sotien = Number(prompt("Nhập số tiền gửi:"));
+        let laiSuat = Number(prompt("Nhập lãi suất (%):"));
+        let nam = Number(prompt("Nhập số năm:"));
+
+        let tienLai = sotien * laiSuat / 100 * nam;
+        let tongTien = sotien + tienLai;
+
+        document.write("Tiền gốc: " + sotien + "<br>");
+        document.write("Tiền lãi: " + tienLai + "<br>");
+        document.write("Tổng tiền phải trả: " + tongTien);
+    </script>
+</body>
+</html>
